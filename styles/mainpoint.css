@@ -1,0 +1,77 @@
+.single-mainpoint .mainpoint-icon span {
+  width: 200px;
+  height: 200px;
+  line-height: 175px;
+  background-color: #f8f6f4;
+  text-align: center;
+  display: inline-block;
+  font-size: 90px;
+  color: #006600;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.single-mainpoint .mainpoint-icon span::before {
+  position: absolute;
+  content: '';
+  bottom: -160px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #006600;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  z-index: -1;
+}
+
+.single-mainpoint .mainpoint-icon span::after {
+  position: absolute;
+  content: '';
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #70c54d;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: -1;
+}
+
+.single-mainpoint.active .mainpoint-icon span,
+.single-mainpoint:hover .mainpoint-icon span {
+  -webkit-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  color: #fff;
+}
+
+.single-mainpoint.active .mainpoint-icon span::before,
+.single-mainpoint:hover .mainpoint-icon span::before {
+  bottom: 0px;
+  -webkit-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.single-mainpoint.active .mainpoint-icon span::after,
+.single-mainpoint:hover .mainpoint-icon span::after {
+  bottom: -150px;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
